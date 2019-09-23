@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+                
+    stage('build') {
+        
+        steps{
+            
+            
+    dir("E://Selenium Java Training/Jenkins Self/bat files")
+    {
+    bat "flipkartSlider.bat"
+  }
+        }
+}
+         
+        }
+        }
+        
+    
