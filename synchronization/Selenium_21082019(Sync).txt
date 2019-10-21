@@ -1,0 +1,35 @@
+Assert Class ---> To Verify values
+
+assertEquals(String expected, String actual):Check that two values are equal
+This compares Boolean, int, String, float, long, char etc.
+
+assertTrue(boolean condition): Check that a condition is true.
+
+assertFalse(boolean condition): Check that a condition is false
+
+**************************************************************************
+                        Synchronization
+**************************************************************************
+
+1. Implicit ---> Entire
+
+   d.manage().timeouts().implicitlyWait(time,timeunits)
+   Ex: d.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+
+2. Explicit ---> Single
+
+   WebDriverWait wait=new WebDriverWait(d,time) ---> Seconds
+
+   wait.until(ExpectedConditions<cond>)
+
+   //option[text()='Andhra Pradesh']
+
+3. Thread.sleep(millisecons)
+
+4. pageLoadTimeout: Sets the amount of time to wait for a page load
+
+   d.manage().timeouts().pageLoadTimeout(time,timeunits)
+   Ex: d.manage().timeouts().pageLoadTimeout(5,TimeUnit.MINUTES);
+
+
+

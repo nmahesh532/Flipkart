@@ -1,0 +1,188 @@
+***************************************************************************
+                          XPath
+***************************************************************************
+
+XPath ---> Language used to locate HTML elements/XML nodes
+
+   i. Absolute ---> Locating from root HTML tag
+
+      //html/body/div[3]/div[2]/div/div/div/div/div[2]/form/table/tbody/tr      [1]/td[1]/label
+
+     //html/body/div/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input
+
+   ii. Relative ---> Current tag/near by tags
+
+       //*[@id="email"]
+       //*[@id="pass"]
+
+---------------------------------------------------------------------------
+
+XPath Terminology
+
+Tag ---> <text>
+Node
+
+Parent
+
+XPath uses path expressions to select nodes in an XML document. 
+
+/ ---> Select from parent tag
+
+// --> Select from current tag
+
+@ ---> Select an attribute
+
+---------------------------------------------------------------------------
+
+1. Unique
+
+   //tagname[@uattributename='value']
+   Ex: //label[@for='email']
+       //input[@id='email']
+
+2. Parent
+
+   //ptagname[@puattributename='value']/ctagname
+   Ex: //td[@class='html7magic']/label
+       //form[@id='login_form']/table/tbody/tr/td/label
+
+       //form[@id='loginForm']/input
+
+   //ptagname[@puattributename='value']/ctagname[rownumber]
+   //form[@id='loginForm']/input[3]
+
+3. Position
+
+   //h3
+   //a/h3
+   //div/a/h3
+
+   //lable
+   //td/label
+   //tr/td/label
+   //tbody/tr/td/label
+
+
+xpath=//div[8]/div/div/div/div/a/h3
+
+xpath=//div[3]/div/div/div/a/h3
+
+**************************************************************************
+                      XPath Functions
+**************************************************************************
+
+1. last()
+
+   //input[@id='b'][last()]
+
+   //input[@id='b'][last()-1]
+
+2. position()
+
+   //input[@id='b'][position()=2]
+   //input[@id='b'][2]
+
+3. text()
+
+   //tagname[text()='value']
+   //label[text()='Email or Phone']
+   //a[text()='Gmail']
+
+4. starts-with()
+
+   yui_3_18_0_3_1565319735111_705
+   yui_3_18_0_3_1565319777392_705
+   yui_3_18_0_3_1565320121129_738
+
+   //a[@href='https://in.yahoo.com/']
+   //div[@id='mega-topbar']/ul/li/a
+   //a[text()='Home']
+
+   //tagname[starts-with(@attributename,'starting value')]
+   //a[starts-with(@id,'yui')]
+
+   aria-label=Mobile number or email address
+
+   //input[starts-with(@aria-label,'Mobile')]
+
+5. contains()
+
+   Text ---> //tagname[contains(text(),'partial text')]
+             //label[contains(text(),'or')]
+
+   Attribute: //tagname[contains(@attributename,'partial value')]
+              //input[contains(@aria-label,'or')]
+
+  Chropath ---> GC, FF
+
+  ChroPath to generate & validate unique selectors like relative xpath in   devtools panel itself
+
+  Firepath ---> FF54
+
+6. following-sibling()
+
+   All ---> //li[text()='Nokia phone']/following-sibling::li
+   Sigle --> //li[text()='Nokia phone']/following-sibling::li[last()]
+
+7. preceding-sibling()
+
+   All ---> //li[text()='Nokia phone']/preceding-sibling::li
+   Single -> //li[text()='Nokia phone']/preceding-sibling::li[position()=1]
+
+**************************************************************************
+                          Xpath Operator
+**************************************************************************
+
+1. And
+
+   //input[@name='sex' and @value='1']
+   //input[@name='sex' and @value='3']
+
+2. OR
+
+   //input[@name='sex' or @value='3']
+   //input[@name='sex123' or @value='2']
+
+---------------------------------------------------------------------------
+
+Class
+Object
+Method
+Constructor
+Package
+Interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+

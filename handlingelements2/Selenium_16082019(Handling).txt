@@ -1,0 +1,113 @@
+**************************************************************************
+                         Handling Elements 
+**************************************************************************
+
+1. Text Field
+2. Text Area
+3. Button
+4. Link
+5. Check box
+6. Radio button
+7. DD
+8. Multi DD
+9. Text
+
+--------------------------------------------------------------------------
+
+1. Text Field
+
+   sendKeys(java.lang.CharSequence... keysToSend)
+   clear()
+   getAttribute(java.lang.String name)
+
+2. Text Area
+
+   sendKeys(java.lang.CharSequence... keysToSend)
+   clear()
+   getAttribute(java.lang.String name)
+
+   sendKeys("Selenium\nAppium")
+
+3. Button
+
+   click()
+   submit()
+
+4. Link 
+
+   click()
+
+5. Check box
+
+   click()
+   isSelected() ---> T/F
+
+6. Radio button
+
+   click()
+   isSelected() ---> T/F
+
+   //input[@value='Log In']  
+
+7. DD
+
+   Select dd=new Select(WebElement element)
+ 
+   dd.selectByIndex(int index) 
+   dd.selectByValue(java.lang.String value)
+   dd.selectByVisibleText(java.lang.String text)
+   dd.getFirstSelectedOption().getText()
+   List<WebElement> e=dd.getOptions() 
+   e.getText()
+
+8. Multi DD
+
+   Select dd=new Select(WebElement element)
+
+   dd.selectByIndex(int index) 
+   dd.selectByValue(java.lang.String value)
+   dd.selectByVisibleText(java.lang.String text)
+
+   dd.selectByIndex(0) 
+   dd.selectByIndex(1)
+   dd.selectByIndex(2)
+
+   List<WebElement> e=dd.getAllSelectedOptions()
+   ---> getText()
+   List<WebElement> e=dd.getOptions() 
+   e.getText()
+   dd.deselectAll()
+
+9. Text
+
+   getText()
+   getCssValue(java.lang.String propertyName)
+
+----------------------------------------------------------------------------
+
+ isDisplayed() ---> T/F
+ isEnabled() ---> T/F
+ 
+
+ElementNotVisibleException: an element is present on the DOM, it is not visible
+
+StaleElementReferenceException: an element is now "stale" --- the element no longer appears on the DOM of the page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

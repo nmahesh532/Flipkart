@@ -1,0 +1,29 @@
+Excel ---> Java API ---> JXL ---> .xls (97 to 2003)
+ 
+                    ---> POI ---> .xls, .xlsx (2007 or above)
+
+Apache POI - the Java API for Microsoft Documents
+
+**************************************************************************
+             Read data from excel by using Apache POI
+**************************************************************************
+
+Download and configure POI jar files: http://poi.apache.org/download.html
+
+1. FileInputStream fis=new FileInputStream("url of excel file")
+
+2. XSSFWorkbook wb=new XSSFWorkbook(fis)
+
+   .xlsx ---> XSSF
+   .xls  ---> HSSF
+
+3. XSSFSheet s=wb.getSheet("sheet name")
+                 OR
+   XSSFSheet s=wb.getSheetAt(index number)
+
+4. s.getLastRowNum()
+
+5. s.getRow(rowindex).getCell(colindex).getCellValue()
+
+6. wb.close()
+

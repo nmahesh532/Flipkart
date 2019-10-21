@@ -1,0 +1,68 @@
+***************************************************************************
+                      Selenium Features
+**************************************************************************
+
+What is Selenium?
+
+Selenium is a suite of tools to automate web browsers across many platforms. 
+
+   1. Selenium IDE ---> Record & Playback
+
+   2. WebDriver ---> Test tool / API
+
+   3. GRID ---> Parallel
+--------------------------------------------------------------------
+
+1. Opensource
+2. Many browsers
+3. Many OS
+4. Many Programming Languages
+5. Cross platform tool
+6. Opensource frameworks
+
+**************************************************************************
+                         Selenium IDE
+**************************************************************************
+
+Selenium IDE is a Chrome and Firefox plugin which records and plays back user interactions with the browser.
+                OR
+Simple record and playback tool
+
+1. Selenium IDE2 ---> FF54 ---> x.html
+
+2. Selenium IDE3 ---> FF & GC ---> x.side
+
+https://www.seleniumhq.org/download/
+
+1. Easily configure
+
+2. Easily record and play
+
+3. No programming
+
+4. Easily locate the elements
+
+5. Easily debug the test scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

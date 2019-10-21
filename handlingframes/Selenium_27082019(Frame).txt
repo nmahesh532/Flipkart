@@ -1,0 +1,21 @@
+***************************************************************************
+                   Handling JavaScript Alerts/Confirmation
+***************************************************************************
+
+d.switchTo().alert().accept() 
+       OR
+Alert al=d.switchTo().alert()
+
+al.accept() 
+al.dismiss()
+al.getText()
+
+***************************************************************************
+                          Handling Frames
+***************************************************************************
+
+Inside frame: d.switchTo().frame(name/id/locator/index)
+
+Outside frame: d.switchTo().defaultContent()
+
+

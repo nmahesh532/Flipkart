@@ -1,0 +1,82 @@
+**************************************************************************
+                  Limitations of Selenium IDE
+**************************************************************************
+
+1. Only FF, GC
+
+2. Simple Test Scripts ---> Control Statements
+
+3. HTML Reports
+
+4. Exception ---> Run time error
+
+5. Flash/flex controls
+
+-------------------------------------------------------------------------
+
+Selenium RC ---> Test tool/ API
+
+WebDriver ---> Test tool/ API
+
+WebDriver2 ---> Default browser ---> FF54
+           ---> JDK1.7 or above
+
+WebDriber3 ---> No default browser
+           ---> JDK1.8 or above
+
+**************************************************************************
+               Softwares Required to Configure WebDriver
+**************************************************************************
+
+1. JDK1.8 or above
+
+   https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-   2133151.html
+
+   32 ---> x86
+   64 ---> x64
+
+2. Eclipse: https://www.eclipse.org/downloads/
+
+3. Jar files: https://www.seleniumhq.org/download/
+   i. Selenium-Server
+   ii. Client-combined
+
+****************************************************************************
+                  Steps to Configure WebDriver
+****************************************************************************
+
+1. Download and install required softwares
+
+2. Create root folder ---> Lib ---> Copy required jar files
+
+3. Launch eclipse
+
+4. Create Java project
+
+5. Configure jar files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

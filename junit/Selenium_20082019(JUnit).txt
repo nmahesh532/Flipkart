@@ -1,0 +1,78 @@
+**************************************************************************
+                                Framework
+**************************************************************************
+
+Framework ---> Define process / set of guide lines
+
+Java ---> JUnit ---> JUnit3
+                ---> JUnit4
+                ---> JUnit5
+     ---> TestNG
+---------------------------------------------------------------------------
+
+JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+
+The JUnit Platform serves as a foundation for launching testing frameworks on the JVM.
+
+JUnit Jupiter is the combination of the new programming model and extension model for writing tests and extensions in JUnit 5. 
+
+JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.
+
+JDK1.8 or Above
+Eclipse 4.7 or above
+
+----------------------------------------------------------------------------
+
+Add JUnit5 Lib to the project
+
+Annotations ---> Define execution order
+
+****************************************
+   JUnit5              JUnit4
+****************************************
+
+1. @Test              @Test
+2. @BeforeEach        @Before
+3. @AfterEach         @After
+4. @BeforeAll         @BeforeClass
+5. @AfterAll          @AfterClass
+6. @Disabled          @Ignore
+7. @Tag               ------
+8. @DisplayName       ------
+9. @TestMethodOrder   @FixMethodOrder
+---------------------------------------------------------------------------
+
+@BeforeEach --> 2, 5
+@AfterEach ---> 4, 7
+@BeforeAll ---> 1
+@AfterAll  ---> 8
+@Test1 ---> 3
+@Test2 ---> 6
+
+class A
+{
+  @BeforeEach ---> Launch browser
+
+  @Test ---> Test steps
+
+  @AfterEach ---> Close the browser
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

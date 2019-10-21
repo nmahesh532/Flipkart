@@ -1,0 +1,20 @@
+Extent Reports Jars
+
+1. Download & Configure below jar files
+
+   cucumber-extentsreport3.1.0
+   extentreports3.1.5
+   freemarker2.3.28
+   bson3.8.0
+  
+   
+2. 
+
+plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+
+
+

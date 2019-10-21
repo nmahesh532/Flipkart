@@ -1,0 +1,61 @@
+**************************************************************************
+                               JDBC
+**************************************************************************
+
+1. Class.forName("driver name")
+
+2. Connection con=DriverManager.getConnection(url of db,username,password)
+
+   For connecting to MySQL URL will be: jdbc:mysql://hostname:port/dbname
+   Ex: jdbc:mysql://localhost:3306/MySQL
+
+   SQL Server ---> 
+   jdbc:sqlserver://localhost\\sqlexpress;user=sa;password=secret
+   sqljdbc.jar
+
+   Oracle DB ---> jdbc:oracle:thin:@localhost:1521:xe
+          ---> ojdbc7.jar
+
+3. Statement stmt=con.createStatement()
+
+   Statement
+   PreparedStatement
+
+4. ResultSet rs=stmt.executeQuery("select * from studeninfo;")
+                    .executeUpdate()
+
+5. while(rs.next())
+   {
+     rs.getString("col name")
+   }
+
+6. con.close()
+
+****************************************************************************
+                             Creating Suites
+****************************************************************************
+
+TestNG ---> XML
+
+ <class name="abcpack.AjaxDemo"/>
+
+ name=packagename.classname
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

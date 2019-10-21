@@ -1,0 +1,24 @@
+
+1. cucumber-core
+2. cucumber-java
+3. cucumber-junit
+4. cucumber-jvm-deps
+5. cucumber-reporting
+6. gherkin-5.1.0
+7. junit
+8. mockito-all
+9. cucumber-html
+10. cucumber-expressions
+11. datatable
+12. datatable-dependencies
+
+-----------------------------------------------------------------
+
+selenium-server-standalone-3.13.0
+client-combined-3.13.0
+
+https://mvnrepository.com/
+
+
+ 
+

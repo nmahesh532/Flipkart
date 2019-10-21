@@ -1,0 +1,76 @@
+**************************************************************************
+                                 Docker
+**************************************************************************
+
+Docker ---> Container
+
+---> To reduce the infrastructure and maintenance costs 
+
+https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows
+
+--------------------------------------------------------------------------
+              Images required to configure Selenium GRID
+--------------------------------------------------------------------------
+
+selenium/hub: Image for running a Grid Hub
+
+selenium/node-chrome: Grid Node with Chrome installed, needs to be connected                       to a Grid Hub
+
+selenium/node-firefox: Grid Node with Firefox installed, needs to be                        connected to a Grid Hub
+
+docker pull imgagename
+
+1. To install hub
+
+   docker pull selenium/hub
+            OR
+   docker pull selenium/hub:3.141.59-vanadium
+
+2. To install node chrome
+
+   docker pull selenium/node-chrome:3.141.59-vanadium
+
+3. To install node firefox
+
+   docker pull selenium/node-firefox:3.141.59-vanadium
+
+**************************************************************************
+             Steps to create Selenium GRID in Docker container
+**************************************************************************
+
+1. Create network
+
+   docker network create grid
+
+2. To start hub
+
+   docker run -d -p 4444:4444 --net grid --name selenium-hub    selenium/hub:3.141.59-vanadium
+
+3. To start node chrome
+
+   docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm    selenium/node-chrome:3.141.59-vanadium
+
+4. To start node firefox
+
+   docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm    selenium/node-firefox:3.141.59-vanadium
+
+--------------------------------------------------------------------------
+
+docker rm -f $(docker ps -a -q)
+
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+***************************************************************************
+                      Handling Mouse Events
+***************************************************************************
+
+Actions a=new Actions(WebDriver driver) 
+
+a.click().perform()
+a.click(WebElement target).perform()
+a.contextClick().perform()
+a.contextClick(WebElement target).perform()
+a.doubleClick().perform()
+a.doubleClick(WebElement target).perform()
+a.moveByOffset(int xOffset, int yOffset).perform()
+a.moveToElement(WebElement target).perform()
+a.moveToElement(WebElement target, int xOffset, int yOffset).perform()
+a.dragAndDrop(WebElement source, WebElement target).perform()
+a.dragAndDropBy(WebElement source, int xOffset, int yOffset).perform()
+a.clickAndHold(source).moveToElement(target).release().build().perform()
+
+                      .moveByOffset(int xOffset, int yOffset)
+
+//div[@id='slider']/span
+
+Java Script ---> window.scrollBy(x,Y)
+
+ RemoteWebDriver: executeScript(jsfunction)

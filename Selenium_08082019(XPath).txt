@@ -1,0 +1,119 @@
+***************************************************************************
+                          XPath
+***************************************************************************
+
+XPath ---> Language used to locate HTML elements/XML nodes
+
+   i. Absolute ---> Locating from root HTML tag
+
+      //html/body/div[3]/div[2]/div/div/div/div/div[2]/form/table/tbody/tr      [1]/td[1]/label
+
+     //html/body/div/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input
+
+   ii. Relative ---> Current tag/near by tags
+
+       //*[@id="email"]
+       //*[@id="pass"]
+
+---------------------------------------------------------------------------
+
+XPath Terminology
+
+Tag ---> <text>
+Node
+
+Parent
+
+XPath uses path expressions to select nodes in an XML document. 
+
+/ ---> Select from parent tag
+
+// --> Select from current tag
+
+@ ---> Select an attribute
+
+---------------------------------------------------------------------------
+
+1. Unique
+
+   //tagname[@uattributename='value']
+   Ex: //label[@for='email']
+       //input[@id='email']
+
+2. Parent
+
+   //ptagname[@puattributename='value']/ctagname
+   Ex: //td[@class='html7magic']/label
+       //form[@id='login_form']/table/tbody/tr/td/label
+
+       //form[@id='loginForm']/input
+
+   //ptagname[@puattributename='value']/ctagname[rownumber]
+   //form[@id='loginForm']/input[3]
+
+3. Position
+
+   //h3
+   //a/h3
+   //div/a/h3
+
+   //lable
+   //td/label
+   //tr/td/label
+   //tbody/tr/td/label
+
+**************************************************************************
+                      XPath Functions
+**************************************************************************
+
+1. last()
+
+   //input[@id='b'][last()]
+
+   //input[@id='b'][last()-1]
+
+2. position()
+
+   //input[@id='b'][position()=2]
+   //input[@id='b'][2]
+
+3. text()
+
+   //tagname[text()='value']
+   //label[text()='Email or Phone']
+   //a[text()='Gmail']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+**************************************************************************
+                       Handling Multiple Windows
+**************************************************************************
+
+d.switchTo().window(name/handle)
+
+handle ---> numeric/ alpha numeric id
+
+getWindowHandle() ---> Single
+
+getWindowHandles() --> set of window handles
+
+//img[@alt='Yono Login']
+
+Login/Signup with mobile number and password
+
+//span[contains(text(),'Login/Signup')]
+
+//li[text()='Log In/Sign Up']

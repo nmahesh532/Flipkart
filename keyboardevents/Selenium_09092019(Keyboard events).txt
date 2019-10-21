@@ -1,0 +1,24 @@
+**************************************************************************
+                      Handling Keyboard Events
+**************************************************************************
+
+Actions a=new Actions(WebDriver driver) 
+
+a.keyDown(java.lang.CharSequence key)
+a.keyDown(WebElement target, java.lang.CharSequence key)
+a.keyUp(java.lang.CharSequence key)
+a.keyUp(WebElement target, java.lang.CharSequence key)
+a.sendKeys(java.lang.CharSequence... keys)
+
+----------------------------------------------------------------------------
+                      Handling Browser History
+----------------------------------------------------------------------------
+
+d.navigate().back()
+d.navigate().forward()
+d.navigate().refresh()
+d.navigate().to(url)
+
+Cookie ---> temp storage
+
+d.manage().deleteAllCookies()

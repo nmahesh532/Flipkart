@@ -1,0 +1,19 @@
+*************************************************************************
+                     Selenium GRID
+*************************************************************************
+
+parallel execution
+
+1. To start the hub
+
+   java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+2. To view the status hub
+
+   http://localhost:4444/grid/console
+
+3. To register the node
+
+   java -jar selenium-server-standalone-3.141.59.jar -role node  -hub    http://192.168.1.9:4444/grid/register
+
+WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);

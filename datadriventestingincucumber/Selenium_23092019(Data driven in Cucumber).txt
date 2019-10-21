@@ -1,0 +1,62 @@
+*************************************************************************
+                     Data Driven Testing in Cucumber framework
+*************************************************************************
+
+The Scenario Outline keyword can be used to run the same Scenario multiple times, with different combinations of values.
+
+A Scenario Outline must contain an Examples (or Scenarios) section.
+
+--------------------------------------------------------------------------
+
+Hooks are blocks of code that can run at various points in the Cucumber execution cycle.
+
+---> Hooks are typically used for setup and teardown of the environment before and after each scenario.
+
+Scenario hooks: Scenario hooks run for every scenario.
+
+Before hooks run before the first step of each scenario.
+
+@Before
+public void doSomethingBefore() 
+{
+  ===
+}
+
+After hooks run after the last step of each scenario, even when steps are failed, undefined, pending, or skipped.
+
+@After
+public void doSomethingAfter()
+{
+    // Do something after after scenario
+}
+
+Tagged hooks: To run a particular hook only for certain scenarios, you can associate a Before or After Hook with a tag expression.
+
+--------------------------------------------------------------------------
+
+A Background allows you to add some context to the scenarios in the feature. It can contain one or more Given steps.
+
+A Background is run before each scenario, but after any Before hooks. In your feature file, put the Background before the first Scenario.
+
+You can only have one set of Background steps per feature. If you need different Background steps for different scenarios, you’ll need to split them into different feature files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

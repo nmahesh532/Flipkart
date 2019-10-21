@@ -1,0 +1,30 @@
+***************************************************************************
+                       Capturing Screenshots
+**************************************************************************
+
+TakesScreenshot ---> getScreenshotAs(OutputType<X> target)
+Capture the screenshot and store it in the specified location.
+
+copyFile(source,target)
+
+float f=1.3;
+
+int n=(int)f;
+
+Exception ---> Run time error
+
+public String getScreenshot()
+{
+try
+{
+  === ---> Test script
+  ===
+  return "Pass"
+}
+catch(ExaceptionType e)
+{
+  === ---> Capturing screenshot
+  ===
+  return "Fail"
+}
+}

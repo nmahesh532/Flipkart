@@ -1,0 +1,86 @@
+**************************************************************************
+                    Locating Elements in Selenium IDE
+*************************************************************************
+
+HTML ---> Hyper Text Markup Language
+
+1. Tag ---> <text>
+
+   i. Container
+     
+      <html>
+       ===
+       ===
+      </html>
+
+   ii. Standalone ---> <br>
+
+2. Attribute
+
+   <person name=x height=y weight=z color=p>
+
+--------------------------------------------------
+    Selenium IDE           WebDriver
+--------------------------------------------------
+1. By Using ID           1. By Using ID
+2. By Using Name         2. By Using Name
+3. By Using Class Name   3. By Using Class Name
+4. By Using LinkText     4. By Using LinkText
+5. By Using XPath        5. By Using XPath
+6. By Using CSS          6. By Using CSS
+7. By Using Identifier   7. By Using Partial LinkText
+8. By Using DOM          8. By Using TagName
+
+***************************************************************************
+
+1. ID
+
+   id=value
+   Ex: id=pass
+
+2. Name
+
+   name=value
+   Ex: name=pass
+
+3. Class Name
+
+   className=value
+   Ex: className=inputtext
+
+4. LinkText
+
+   linkText=name of the link
+   Ex: linkText=Forgotten account?
+
+   <a> text </a>
+
+5. XPath ---> Language used to locate HTML elements/XML nodes
+
+   i. Absolute ---> Locating from root HTML tag
+
+      //html/body/div[3]/div[2]/div/div/div/div/div[2]/form/table/tbody/tr      [1]/td[1]/label
+
+     //html/body/div/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input
+
+   ii. Relative ---> Current tag/near by tags
+
+       //*[@id="email"]
+       //*[@id="pass"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

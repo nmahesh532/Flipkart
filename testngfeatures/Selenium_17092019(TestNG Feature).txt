@@ -1,0 +1,25 @@
+**************************************************************************
+                         Rerunning failed tests
+**************************************************************************
+
+@Test(retryAnalyzer = MyRetry.class)
+
+TestNG Listeners ---> Event Driven
+
+@Listeners({ com.example.MyListener.class, com.example.MyMethodInterceptor.class })
+                OR
+
+  <listeners>
+    <listener class-name="com.example.MyListener" />
+    <listener class-name="com.example.MyMethodInterceptor" />
+  </listeners>
+
+---------------------------------------------------------------------------
+
+1. Group Test ---> @Test(groups="groupname")
+
+2. Priority Test --> @Test(priority=number)
+
+3. Dependency Test --> @Test(dependsOnGroups="groupname")
+                       @Test(dependsOnMethods="methodname")
+   

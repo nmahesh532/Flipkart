@@ -1,0 +1,40 @@
+*************************************************************************
+                     TestNG Parallel Execution
+*************************************************************************
+
+1. Parallel Methods
+
+   <suite guice-stage="DEVELOPMENT" name="Default suite" parallel="methods">
+
+2. Parallel Classes
+
+   <suite guice-stage="DEVELOPMENT" name="Default suite" parallel="classes">
+
+3. Parallel Tests
+
+   <suite guice-stage="DEVELOPMENT" name="Default suite" parallel="tests">
+
+---------------------------------------------------------------------------
+               Running TestNG Suite from Commandline
+---------------------------------------------------------------------------
+
+1. Set path to Java
+
+   Var Name: JAVA_HOME
+   Var Value: C:\Program Files\Java\jdk1.8.0_211
+
+   Var Name: path
+   Var Value: C:\Program Files\Java\jdk1.8.0_211\bin
+
+   java -version
+
+2. set classpath=url of .class files;url of .jar files
+
+3. java org.testng.TestNG suitename.xml
+
+
+
+
+
+
+

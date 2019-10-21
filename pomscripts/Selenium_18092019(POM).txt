@@ -1,0 +1,58 @@
+**************************************************************************
+                            Types Frameworks
+*************************************************************************
+
+A set of guidelines like coding standards, test-data handling, object repository treatment etc... 
+
+---> beneficial outcomes like increase code re-usage, higher portability, reduced script maintenance cost etc.
+
+1. Keyword driven
+
+2. Data driven
+
+3. POM
+
+4. Cucumber ---> BDD
+
+5. Hybrid
+
+--------------------------------------------------------------------------
+                                  POM
+--------------------------------------------------------------------------
+
+@FindBy: an alternative mechanism for locating the element or a list of elements
+
+WebElement e=d.findElement(By.linkText("Sign in"))
+                OR
+@FindBy(linkText='Sign in') WebElement e
+
+PageFactory this allows users to quickly and easily create PageObjects.
+
+initElements(WebDriver driver, java.lang.Class<T> pageClassToProxy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

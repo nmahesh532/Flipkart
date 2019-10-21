@@ -1,0 +1,46 @@
+***************************************************************************
+                        Handling WebTable
+**************************************************************************
+
+1. No of Rows ---> tr's in a table: //table[@id='customers']/tbody/tr
+
+2. No of Cols ---> td's in a row
+
+3. Verify cell data ---> getText()
+
+
+Row#1, Col#1, Text:
+    1      2  Text:
+
+
+if(row==4 && col==2)
+{
+  assertEquals("exp text", getText())
+}
+
+---------------------------------------------------------------------------
+            Broken Links
+
+https://demo.cyclos.org/#login
+
+User Name: demo
+Password: 1234
+
+
+
+Bank ---> Web 
+     ---> Mobile
+
+
+
+
+
+
+
+
+
+
+
+
+
+

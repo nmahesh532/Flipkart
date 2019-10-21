@@ -1,0 +1,103 @@
+*************************************************************************
+                   Locating Elements by using CSS
+*************************************************************************
+
+1. Tag Name
+
+   css=tagname
+   Ex: css=label
+
+2. ID
+
+   css=#idvalue
+        OR
+   css=tagname#idvalue
+
+   css=#email
+   css=input#email
+
+3. Class
+
+   css=.classvalue
+         OR
+   css=tagname.classvalue
+
+   css=.inputtext
+   css=input.inputtext
+
+4. Unique
+
+   XPath ---> //tagname[@uattributename='value']
+
+   css=tagname[uattributename='value']
+   Ex: css=label[for='email']
+
+5. Parent
+
+   XPath ---> //ptagname[@puattributename='value']/ctagname
+
+   css=#pidvalue ctagname[cattributename='value']
+                  OR
+   css=.pclassvalue ctagname[cattributename='value']
+                   OR
+   css=#pidvalue > ctagname.classvalue
+
+   Ex: css=#login_form label[for='email']
+       css=.html7magic label[for='email']
+
+***************************************************************************
+                           Advanced CSS Selectors
+***************************************************************************
+
+aria-label=Mobile number or email address
+
+1. Starts-with
+
+   css=tagname[attributename^='starting value']
+   Ex: css=input[aria-label^='Mobile']
+
+2. Ends-with
+
+   css=tagname[attributename$='ending value']
+   Ex: css=input[aria-label$='address']
+
+3. Contains
+
+   css=tagname[attributename*='partial value']
+   Ex: css=input[aria-label*='or']
+
+4. Position
+  
+   css=li[id^='menu']
+
+   i. first-child ---> css=li[id^='menu']:first-child
+
+   ii. last-child ---> css=li[id^='menu']:last-child
+
+   iii. nth-child ---> css=li[id^='menu']:nth-child(3)   
+
+---------------------------------------------------------------------------
+
+d.findElement(By.cssSelector("selector"))
+
+d.findElement(By.cssSelector("#email"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

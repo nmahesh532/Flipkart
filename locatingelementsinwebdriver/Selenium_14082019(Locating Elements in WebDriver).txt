@@ -1,0 +1,86 @@
+**************************************************************************
+                        Locating Elements
+**************************************************************************
+
+1. ID
+2. Name
+3. ClassName
+4. LinkText
+5. Partial LinkText
+6. XPath
+7. CSS
+8. TagName
+
+-------------------------------------------------------------------------
+
+1. ID
+
+   Selenium IDE ---> id=value
+
+   WebDriver d=new FirefoxDriver()
+
+   d.findElement(By.id("value"))
+   Ex: d.findElement(By.id("email"))
+
+   findElement(By by): Find the first WebElement using the given method.
+
+   findElements(By by): Find all elements within the current page using the     given mechanism.
+
+2. Name
+
+   d.findElement(By.name("value"))
+   Ex: d.findElement(By.name("email"))
+
+3. Class
+
+   d.findElement(By.className("value"))
+   Ex: d.findElement(By.className("inputtext"))
+
+4. Link Text
+
+   d.findElement(By.linkText("name of the link"))
+   Ex: d.findElement(By.linkText("Forgotten account?"))
+
+5. Partial Link Text
+
+   d.findElement(By.partialLinkText("paratial link name")
+   Ex: d.findElement(By.partialLinkText("account"))
+
+6. XPath
+
+   d.findElement(By.xpath("xpath expression"))
+   Ex: d.findElement(By.xpath("//input[@id='email']"))
+
+7. CSS
+
+8. TagName
+
+   d.findElement(By.tagName("name of the tag"))
+   
+   No of Links: d.findElements(By.tagName("a")).size()
+
+   No of iframes: d.findElements(By.tagName("iframe")).size()
+
+
+
+Class ---> U U
+Interface --> U U
+Method    --> L U
+Package   --> L
+varName   --> L U
+
+Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
