@@ -1,0 +1,19 @@
+To connect to branch
+
+open terminal select work directory
+
+git clone repositorylink
+
+After changes in any file or adding any new files
+
+git add .
+
+git commit -m "Comments"
+
+git push origin master (master is a branch name, if you are in other branch use the branch name)
+
+
+to get all the updated data
+
+git pull
+
