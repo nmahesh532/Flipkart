@@ -17,3 +17,7 @@ to get all the updated data
 
 git pull
 
+
+To check how many branches are there
+
+git branch
